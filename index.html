@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="navbar">
+
+            <ul>
+                <li><img src="/gym.img/logo.png" alt="logo"></li>
+                <li class="hideOnMobile"><a href="#hero">home</a></li>
+                <li class="hideOnMobile"><a href="#About">About</a></li>
+                <li class="hideOnMobile"><a href="#sevices">services</a></li>
+                <li class="hideOnMobile"><a href="#signup-form">signup</a></li>
+                <li class="hideOnMobile"><a href="#signin-form">signin</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><img src="/gym.img/menu-burger (1).svg"
+                            alt="menu" width="20px" height="20px"></a></li>
+                </li>
+            </ul>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img src="/gym.img/cross.svg" alt="cross" width="25px"
+                            viewBox="0 96 960 960"></a></li>
+                <li><a href="#hero">home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#sevices">services</a></li>
+                <li><a href="#signup-form">sign up </a></li>
+                <li><a href="#signin-form">Sign in</a></li>
+                </li>
+            </ul>
+
+        </div>
+        <main>
+            <section id="hero" class="main-back">
+
+                <div class="main-content   text-white text-center">
+                    <h1>Welcome to the gym</h1>
+                    <p>"Fuel your fire, chase your dream — welcome to Dream Fitness, where passion meets perseverance."
+                        "From strength to endurance, we help turn goals into milestones — one workout at a time."</p>
+                    <a href="/services" class="btn btn-outline-light mt-3">Explore Now</a>
+                </div>
+            </section>
+        </main>
+    </header>
+
+    <section id="About">
+        <div class="About-container">
+            <h2>About Us</h2>
+            <p>At Dream Fitness, we believe in empowering individuals to achieve their fitness goals through
+                personalized
+                training, group classes, and nutrition plans. Our experienced trainers are dedicated to providing a
+                supportive and motivating environment for all fitness levels.</p>
+            <p>Join us today and start your journey towards a healthier, happier you!</p>
+            <p>At Dream Fitness, we take pride in offering a visually striking and energizing workout space. Our gym
+                features a modern and spacious interior with high ceilings, well-ventilated rooms, and bright, ambient
+                lighting to keep you motivated throughout your fitness journey.</p>
+                <p>Dream Fitness offers an atmosphere that's as inviting as it is powerful.</p>
+        </div>
+    </section>
+    <section>
+        <div class="services-container">
+            <h2>Our Services</h2>
+            <div class="services-item">
+
+                <ul class="services-list">
+                    <li><a href="#" onclick="openCard(event,'Personal Training')">Personal Training</a></li>
+                    <li><a href="#" onclick="openCard(event,'Group Classes')">Group Classes</a></li>
+                    <li><a href="#" onclick="openCard(event,'Nutrition Plans')">Nutrition Plans</a></li>
+                    <li><a href="#" onclick="openCard(event,'Wellness Coaching')">Wellness Coaching</a></li>
+                </ul>
+                <div class="services-center-title">
+
+                    <h3>DREAM </h3>
+                    
+                </div>
+                <ul class="services-list">
+                    <li><a href="#" onclick="openCard(event,'Wellness Coaching')">High Energy Sessions</a></li>
+                    <li><a href="#" onclick="openCard(event,'Scheduled Timings')"> Scheduled Timings </a></li>
+                    <li><a href="#" onclick="openCard(event,'Certified Instructors')"> Certified Instructors</a></li>
+                    <li><a href="#" onclick="openCard(event,'Motivational Environment')"> Motivational Environment</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div id="services-card" class="services-card hidden">
+                <span class="close-btn" onclick="closeCard()">X</span>
+                <h3 id="card-title">Title</h3>
+                <p id="card-desc">Service details will appear here.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="login">
+        <div class="from-wrapper">
+            <div id="signup-form" class="form-box">
+                <h2>Register to join Us</h2>
+                <form>
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter your @gmail" required>
+                    <input type="text" placeholder="Date of Birth(dd/mm/yyyy)" required>
+                    <input type="tel" placeholder="phone number" required>
+                    <input type="password" placeholder="create password" required>
+                    <input type="password" placeholder="confirm password" required>
+                    <button type="submit">Submit</button>
+                    <button type="clear">Clear</button>
+                </form>
+                <p>Already have a account? <a href="#" onclick="showForm('signin')">Sign In</a></p>
+            </div>
+            <div id="signin-form" class="form-box hidden">
+                <h2>Sign In</h2>
+                <form>
+                    <input type="email" placeholder="Enter your @gmail" required>
+                    <input type="password" placeholder="Enter your password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>New here?<a href="#" onClick="showForm('signup')">sign Up</a></p>
+
+            </div>
+            <div class="toggle-buttons">
+                <button onClick="showForm('signup')">sign Up</button>
+                <button onClick="showForm('signin')">sign In</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Dream Fitness. All rights reserved.</p>
+        <p>Follow us on:
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="bi bi-facebook" style="font-size: 24px;"></i>
+            </a>
+
+            <a href="https://www.twitter.com" target="_blank">
+                <i class="bi bi-twitter" style="font-size: 24px;"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="bi bi-instagram" style="font-size: 24px;"></i>
+            </a>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
