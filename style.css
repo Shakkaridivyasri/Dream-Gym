@@ -6,11 +6,7 @@
 
 body {
     height: 100vh;
-    /* background-image: url(gym.img/img1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+
 
 }
 
@@ -50,7 +46,7 @@ body {
 
 .navbar a:hover {
     color: #000;
-    /* cursor: pointer; */
+    
     box-shadow: rgb(49, 48, 48);
 
 }
@@ -101,7 +97,7 @@ ul.sidebar li {
 
 .main-back {
     height: 100vh;
-    background: url('/gym.img/img.jpg') no-repeat center center/cover;
+    background: url('gym.img/img.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +127,7 @@ ul.sidebar li {
 }
 
 #About {
-    background: url("/gym.img/img6.jpg") no-repeat fixed center/cover;
+    background: url("gym.img/img6.jpg") no-repeat fixed center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -229,7 +225,7 @@ ul.sidebar li {
     width: 200px;
     height: 200px;
     padding: 0px 20px;
-    background-image: url("/gym.img/img6.jpg");
+    background-image: url("gym.img/img6.jpg");
 
     background-size: cover;
     background-position: center;
@@ -278,7 +274,7 @@ ul.sidebar li {
 }
 .login{
 
-    background: url(/gym.img/img7.png) fixed center/cover no-repeat;
+    background: url("gym.img/img7.png") fixed center/cover no-repeat;
 }
 .from-wrapper{
     width: 100%;

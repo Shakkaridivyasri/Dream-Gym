@@ -7,9 +7,9 @@ function hideSidebar() {
   sidebar.style.display = "none";
 }
   const images =[
-    "/gym.img/img1.jpg",
-    "/gym.img/img3.jpg",
-    "/gym.img/img5.jpg",
+    "gym.img/img1.jpg",
+    "gym.img/img3.jpg",
+    "gym.img/img5.jpg",
 
   ];
   images.forEach((src) => {
